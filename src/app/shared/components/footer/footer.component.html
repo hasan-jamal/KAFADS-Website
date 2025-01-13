@@ -1,0 +1,40 @@
+<footer>
+    <div class="footer-container">
+        <div class="d-flex fx-footer fx-general-cards">
+            <div class="part part1 ">
+                <img src="../../../../assets/images/logo.svg" alt="logo">
+                <h5>“We help international companies who are not looking to expand at the moment to find partners
+                    and clients via our B2B
+                    programs.“</h5>
+            </div>
+            <div class="part part2">
+                <a [routerLink]="'index'" class="font-medium">Home</a>
+                <a class="font-medium">About us</a>
+                <a [routerLink]="'programPage'" class="font-medium">Our Programs</a>
+                <a [routerLink]="'./freeConsultation'" class="font-medium">Contact Us</a>
+                <a class="font-medium">Get a Demo</a>
+            </div>
+            <div class="part part3">
+                <h1 class="font-bold">Let’s Chat!</h1>
+                <p class="style-font">Please provide your email address by submitting it, and we will make sure to
+                    contact you as soon
+                    as possible.</p>
+                <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+                    <div class="d-flex fx-submit">
+                        <input type="email" id="email" name="email" placeholder="Enter your email"
+                            [(ngModel)]="formData.email" required email>
+                        <button type="submit" class="btn-move font-medium"
+                            [disabled]="contactForm.invalid">Submit</button>
+                    </div>
+                </form>
+                <div class="d-flex align-items-center fx-icons-link">
+                    <a><img src="../../../../assets/images/icon-whatsapp.svg" alt="icon-whatsapp"></a>
+                    <a><img src="../../../../assets/images/icon-email.svg" alt="icon-email"></a>
+                    <a><img src="../../../../assets/images/icon-linkedin.svg" alt="icon-linkedin"></a>
+                    <a><img src="../../../../assets/images/icon-instgram.svg" alt="icon-instgram"></a>
+                    <a><img src="../../../../assets/images/icon-facebook.svg" alt="icon-facebook"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,49 @@
+<app-header2></app-header2>
+<main class="sub-main">
+    <section class="section-contact">
+        <div class="section-contact-container">
+            <div class="d-flex fx-section-contact fx-general-cards">
+                <div class="section-contact-texts fx-general-card-st">
+                    <h1 class="font-bold">Would you like a Free <span class="color-purple">consultation</span> ?
+                        Let’s Chat!</h1>
+                    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+                        <div class="form-group">
+                            <input type="text" id="fullName" name="fullName" [(ngModel)]="formData.fullName"
+                                placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" [(ngModel)]="formData.email"
+                                placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="companyName" name="companyName" [(ngModel)]="formData.companyName"
+                                placeholder="Company Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="taxNumber" name="taxNumber" [(ngModel)]="formData.taxNumber"
+                                placeholder="Tax Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="subject" name="subject" [(ngModel)]="formData.subject"
+                                placeholder="Consultation Subject" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-move" [disabled]="loading">Submit</button>
+                    </form>
+                </div>
+                <div class="section-contact-img fx-general-card-st">
+                    <img src="../../../../assets/images/contact-page.png" alt="contact image">
+                    <p class="style-font ">Or Email us on the follwing email, and we will contact you back soon...
+                        <span class="font-SemiBoldItalic">info.com</span>
+                    </p>
+                    <div class="d-flex align-items-center justify-content-center fx-icons-link">
+                        <a href=""><img src="../../../../assets/images/whatsApp-black.svg" alt="icon-whatsapp"></a>
+                        <a href=""><img src="../../../../assets/images/email.black.svg" alt="icon-email"></a>
+                        <a href=""><img src="../../../../assets/images/linkedin-black.svg" alt="icon-linkedin"></a>
+                        <a href=""><img src="../../../../assets/images/instgram-black.svg" alt="icon-instgram"></a>
+                        <a href=""><img src="../../../../assets/images/facebook-black.svg" alt="icon-facebook"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

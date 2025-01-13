@@ -1,0 +1,132 @@
+<section class="section-eight" id="Contact">
+    <div class="section-eight-container">
+        <h1 class="font-bold subtitle-one40px text-center">Would you like a try? <br>
+            Get A <span class="color-purple">Demo</span> </h1>
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+            <div class="d-flex fx-inputs">
+                <div class="form-group">
+                    <label for="firstName" class="label-input style-font">Your Firts Name</label>
+                    <input type="text" id="firstName" class="form-control font-medium" placeholder="Your First Name"
+                        required [(ngModel)]="formData.firstName" name="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="LastName" class="label-input style-font">Your Last Name</label>
+                    <input type="text" id="lastName" class="form-control font-medium" placeholder="Your Last Name"
+                        required [(ngModel)]="formData.lastName" name="lastName">
+                </div>
+            </div>
+            <div class="d-flex fx-inputs">
+                <div class="form-group">
+                    <label for="phone-number" class="label-input style-font">Phone Number</label>
+                    <div class="phone-input-container">
+                        <input type="tel" id="phoneNumber" class="form-control" placeholder="Phone Number" required
+                            [(ngModel)]="formData.phoneNumber" name="phoneNumber">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="label-input style-font">Working Email</label>
+                    <input type="email" id="email" class="form-control font-medium" placeholder="Working Email" required
+                        [(ngModel)]="formData.email" name="email">
+                </div>
+            </div>
+            <div class="d-flex fx-inputs">
+                <div class="form-group">
+                    <label for="CompanyName" class="label-input style-font">Company Name</label>
+                    <input type="text" id="companyName" class="form-control font-medium" placeholder="Company Name"
+                        [(ngModel)]="formData.companyName" name="companyName">
+                </div>
+                <div class="form-group">
+                    <label for="WebsiteLink" class="label-input style-font">Website Link</label>
+                    <input type="url" id="websiteLink" class="form-control font-medium" placeholder="Website Link"
+                        [(ngModel)]="formData.websiteLink" name="websiteLink">
+                </div>
+            </div>
+            <div class="d-flex fx-inputs">
+                <div class="form-group">
+                    <label for="OfficeCountry" class="label-input style-font">Office Country</label>
+                    <div class="dropdown-btn">
+                        <input type="text" id="officeCountry" class="form-control style-font"
+                            placeholder="Office Country " [(ngModel)]="formData.officeCountry" name="officeCountry"
+                            required>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="AnyEntity" class="label-text style-font">Have you been referred by any
+                        entity?</label>
+                    <div class="d-flex fx-radioBtn">
+                        <div class="form__radio-group">
+                            <input id="referredYes" type="radio" class="form__radio-input"
+                                [(ngModel)]="formData.referredByEntity" name="referredByEntity" value="Yes" />
+                            <label for="referredYes" class="form__radio-label style-font">
+                                <span class="form__radio-button"></span>
+                                Yes
+                            </label>
+                        </div>
+                        <div class="form__radio-group">
+                            <input id="referredNo" type="radio" class="form__radio-input"
+                                [(ngModel)]="formData.referredByEntity" name="referredByEntity" value="No" />
+                            <label for="referredNo" class="form__radio-label style-font">
+                                <span class="form__radio-button"></span>
+                                <span class="text">No</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex fx-inputs">
+                <div class="form-group">
+                    <label for="stratupFounder" class="label-text style-font">Are you a stratup founder?</label>
+                    <div class="d-flex fx-radioBtn">
+                        <div class="form__radio-group">
+                            <input id="startupYes" type="radio" class="form__radio-input"
+                                [(ngModel)]="formData.isStartupFounder" name="isStartupFounder" value="Yes" />
+                            <label for="startupYes" class="form__radio-label style-font">
+                                <span class="form__radio-button"></span>
+                                Yes
+                            </label>
+                        </div>
+                        <div class="form__radio-group">
+                            <input id="startupNo" type="radio" class="form__radio-input"
+                                [(ngModel)]="formData.isStartupFounder" name="isStartupFounder" value="No" />
+                            <label for="startupNo" class="form__radio-label style-font">
+                                <span class="form__radio-button"></span>
+                                <span class="text">No</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="CompanyName" class="label-text style-font">are you a portfolio company at this
+                        entity?</label>
+                    <div class="d-flex fx-radioBtn">
+                        <div class="form__radio-group">
+                            <input id="portfolioYes" type="radio" class="form__radio-input"
+                                [(ngModel)]="formData.isPortfolioCompany" name="isPortfolioCompany" value="Yes" />
+                            <label for="portfolioYes" class="form__radio-label style-font">
+                                <span class="form__radio-button"></span>
+                                Yes
+                            </label>
+                        </div>
+                        <div class="form__radio-group">
+                            <input id="portfolioNo" type="radio" class="form__radio-input"
+                                [(ngModel)]="formData.isPortfolioCompany" name="isPortfolioCompany" value="No" />
+                            <label for="portfolioNo" class="form__radio-label style-font">
+                                <span class="form__radio-button"></span>
+                                <span class="text">No</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lookingFor" class="label-input style-font">What Are you looking for?</label>
+                <textarea id="lookingFor" class="form-control font-medium" placeholder="What are you looking for?"
+                    [(ngModel)]="formData.lookingFor" name="lookingFor"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-move" [disabled]="loading">Book A Demo</button>
+            </div>
+        </form>
+    </div>
+</section>

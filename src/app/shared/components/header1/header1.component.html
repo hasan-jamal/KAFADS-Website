@@ -1,0 +1,63 @@
+<div class="navbar-mobile">
+    <div class="coverNav" (click)="toggleSidenav()">
+
+    </div>
+    <div class="align-items-center justify-content-between flex-head">
+        <a><img src="../../../../assets/images/logo.svg" class="logo-image" /></a>
+        <div class="hamburger" id="hamburger" (click)="toggleSidenav()">
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+        </div>
+    </div>
+    <div class="nav-mobile">
+        <div class="links">
+            <img src="../../../../assets/images/logo.svg" class="logo" />
+            <div class="fx-links">
+                <a [routerLink]="'index'" routerLinkActive="active" class="style-font active ahref1">Home</a>
+                <div class="border ahref1"></div>
+                <a class="style-font ahref2" (click)="scrollToSection()">About us</a>
+                <div class="border ahref2"></div>
+                <a class="style-font ahref3" [routerLink]="'../programPage'" routerLinkActive="active">B2B & B2G
+                    program</a>
+                <div class="border ahref3"></div>
+                <a class="style-font ahref4">Company establishment program</a>
+                <div class="border"></div>
+                <a class="style-font ahref5" [routerLink]="'../freeConsultation'" routerLinkActive="active">Free
+                    consultation</a>
+                <div class="border"></div>
+                <button class="btn-move" (click)="scrollToSectionContact()">
+                    <span class="font-medium">Get A Demo</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header id="header">
+    <div class="d-flex align-items-center fx-header">
+        <div class="logo-header">
+            <img src="../../../../assets/images/logo.svg" alt="Kafads">
+        </div>
+        <div class="align-items-center links-part links-part1">
+            <a [routerLink]="'index'" routerLinkActive="active" class="font-medium  headerText1 active">Home</a>
+            <a class="font-medium headerText2" (click)="scrollToSection()">About us</a>
+            <a [routerLink]="'../programPage'" routerLinkActive="active" class="font-medium headerText3">
+                B2B & B2G program
+            </a>
+
+            <a class="font-medium headerText4">company establishment program</a>
+            <a [routerLink]="'../freeConsultation'" routerLinkActive="active" class="font-medium headerText5">Free
+                consultation</a>
+            <button class="btn-move " (click)="scrollToSectionContact()">
+                <span class="font-medium">Get A Demo</span>
+            </button>
+            <div class="hamburger" id="hamburger" onclick="toggleSidenav();">
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+            </div>
+        </div>
+
+    </div>
+</header>

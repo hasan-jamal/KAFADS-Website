@@ -1,0 +1,174 @@
+footer{
+    background: rgba(67, 1, 94, 1);
+    width: 96%;
+    margin: auto;
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+.footer-container{
+    padding: 48px 65px;
+}
+footer .fx-footer{
+    align-items: normal;
+    justify-content: start;
+    gap: 24px;
+}
+footer .fx-footer .part1{
+    flex: 1 1 calc(40% - 24px);
+    max-width: calc(40% - 0px);
+}
+footer .fx-footer .part2{
+    flex: 1 1 calc(20% - 24px);
+    max-width: calc(20% - 0px);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+footer .fx-footer .part3{
+    flex: 1 1 calc(40% - 24px);
+    max-width: calc(40% - 0px);
+    color: rgba(255, 255, 255, 1);
+}
+footer .part1 h5{
+    font-family: 'Poppins Italic';
+    font-size: 1rem;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 90%;
+    margin-top: 24px;
+}
+footer .fx-footer .part2 a{
+    color: rgba(133, 133, 133, 1);
+    font-size: 1rem;
+    text-decoration: none;
+    padding-left:3rem;
+    transition: 0.3s;
+}
+footer .fx-footer .part2 a:hover{
+    transform: scale(0.95);
+}
+footer .fx-footer .part3 h1{
+    font-size: 32px;
+    line-height: 58px;
+}
+footer .fx-footer .part3 p{
+    line-height: 32px;
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 70%;
+    letter-spacing: -0.2px;
+}
+footer .fx-footer .part3 .fx-submit{
+    margin-bottom: 24px;
+    gap: 15px;
+}
+footer .fx-footer .part3 .fx-submit input{
+ background: #B499BF;
+ width: 90%;
+}
+footer .fx-footer .part3 .fx-submit .btn-move{
+    height: 60px;
+    font-size: 18px;
+}
+ .fx-icons-link{
+    gap: 24px;
+}
+ .fx-icons-link a{transition: 0.3s;}
+ .fx-icons-link a:hover{transform: scale(0.9);}
+@media (min-width:1706.67px) {
+    footer .fx-footer .part2 a,
+    footer .part1 h5,
+    footer .fx-footer .part3 p{
+         font-size: 1.2rem;
+    }
+}
+@media (min-width:1920px) {
+    footer .fx-footer .part2 a,
+    footer .part1 h5,
+    footer .fx-footer .part3 p{
+         font-size: 1.5rem;
+    }
+    footer .part1 h5{line-height: 42px;}
+    footer .fx-footer .part3 p{margin-bottom: 32px;}
+    .fx-icons-link img{
+        width: 40px;
+        height: 40px;
+    }
+    footer .fx-footer .part3 .fx-submit{margin-bottom: 32px;}
+    footer .fx-footer .part3 h1{margin-bottom: 2rem;}
+}
+@media (min-width:2048px) {
+}
+@media (min-width:2304px) {
+
+}
+@media (max-width:1396.36px) {
+
+}
+@media (max-width:1228.8px) {
+    footer .fx-footer .part3 p {
+        line-height: 24px;
+        font-size: 14px;
+    }
+    footer .fx-footer .part3 .fx-submit input{padding: 0 16px;}
+    footer .fx-footer .part3 .fx-submit .btn-move,
+    footer .fx-footer .part3 .fx-submit input{
+        height: 50px;
+        font-size: 15px;
+    }
+}
+@media (max-width:1024px) {
+    .footer-container {
+       padding: 32px 40px;
+    }
+    footer .part1 h5 {
+        font-size: .8rem;
+        line-height: 25px;
+    }
+    footer .fx-footer .part2{
+        gap: 14px;
+    }
+    footer .fx-footer .part2 a{
+        padding-left: 1rem;
+    }
+}
+@media (max-width:877.71px) {
+   footer .fx-footer .part3 h1{font-size: 26px;}
+   footer .fx-footer .part3 .fx-submit .btn-move,
+    footer .fx-footer .part3 .fx-submit input{
+        height: 45px;
+        font-size: 12px;
+    }
+}
+@media (max-width:768px) {
+    footer .fx-footer .part2 a{font-size: 0.7rem;}
+}
+@media (max-width:512px) {
+    footer .fx-footer{
+        flex-direction: column;
+    }
+    footer .fx-footer .part1{
+        flex: 1 1 calc(100% - 24px);
+        max-width: calc(100% - 0px);
+    }
+    footer .fx-footer .part2{
+        flex: 1 1 calc(100% - 24px);
+        max-width: calc(100% - 0px);
+    }
+    footer .fx-footer .part3{
+        flex: 1 1 calc(100% - 24px);
+        max-width: calc(100% - 0px);
+    }
+    .footer-container{padding: 24px;}
+    footer .fx-footer .part2 a{font-size: 1rem;padding-left: 0;}
+    footer .part1 h5 {
+        font-size: 1rem;
+        line-height: 28px;
+    }
+    footer .fx-footer .part3 p {
+        line-height: 27px;
+        font-size: 16px;
+    }
+}

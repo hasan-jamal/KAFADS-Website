@@ -1,0 +1,293 @@
+.sub-main{
+    margin-top: 64px;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    width: 94%;
+    margin: 64px auto 64px auto;
+}
+.sub-main .border-line{
+    height: 1px;
+    width: 100%;
+    background: rgba(100, 12, 136, 0.2);
+    margin: 48px auto;
+}
+/* Details B2G */
+ .details-B2G h2{
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+    border-bottom:1px solid rgba(100, 12, 136, 0.2);
+ }
+  .details-B2G img{
+    width: 100%;
+    margin-bottom: 32px;
+  }
+    .details-B2G p{font-size: 20px;line-height: 32px;}
+/* What You Get */
+.WhatYouGet .fx-WhatYouGet{
+    gap: 32px;
+    align-items: normal;
+    justify-content: start;
+}
+.WhatYouGet .box-WhatYouGet{
+    background:rgba(255, 255, 255, 1) ;
+    border-radius: 16px;
+    gap: 24px;
+    flex-direction: column;
+    display: flex;
+    padding: 24px;
+    width: 50%;
+    flex: 1 1 calc(50% - 32px);
+    max-width: calc(50% - 0px);
+}
+.box-WhatYouGet h2{
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(100, 12, 136, 1);
+}
+.box-WhatYouGet .fx-box-WhatYouGet{
+    justify-content: start;
+    gap: 16px;
+}
+.box-WhatYouGet h4{
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(107, 114, 128, 1);
+     flex: 1 1 calc(50% - 16px);
+    max-width: calc(50% - 0px);
+    font-weight:400;
+}
+/* Program Network */
+.program-network h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+.program-network .fx-program-network{
+    align-items: normal;
+    justify-content: start;
+    gap: 32px;
+}
+.program-network .fx-program-network  .box-program-network{
+    padding: 30px 24px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 calc(25% - 32px);
+    max-width: calc(25% - 0px);
+    text-align: center;
+}
+.program-network .fx-program-network  .box-program-network:hover,
+.program-network .fx-program-network  .box-program-network.active{
+    background:rgba(100, 12, 136, 0.05) ;
+    border: 1px solid rgba(100, 12, 136, 0.2);
+}
+.program-network .fx-program-network  .box-program-network img{
+    width: 96px;
+    height: 96px;
+    border-radius: 9999px;
+    margin-bottom: 24px;
+}
+.program-network .fx-program-network  .box-program-network h4{
+    line-height: 28px;
+    font-size: 16px;
+    color: rgba(100, 12, 136, 1);
+    font-weight: 400;
+}
+.program-network .fx-program-network  .box-program-network p{
+    font-size: 13.67px;
+    line-height: 20px;
+    color: rgba(107, 114, 128, 1);
+}
+
+/* Section Eight 2 */
+.section-eight2{margin-top: 100px;}
+.section-eight2 .section-eight-container{
+    width:35%;
+    margin: auto;
+    text-align: center;
+}
+.section-eight2 .section-eight-container form{
+    width: 100%;
+}
+.section-eight2 h1{margin-bottom: 16px;}
+.section-eight2 h1,
+.section-eight2 h1 span{
+text-transform: capitalize;
+}
+.section-eight2 p{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 1);
+    opacity: 70%;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+}
+.section-eight2 p .font-SemiBoldItalic{
+    color: rgba(100, 12, 136, 1);
+}
+.section-eight2 .fx-submit{
+    margin: 32px 0;
+    width: 100%;
+    gap: 15px;
+}
+.section-eight2 .fx-submit .btn-move{
+     height: 60px;
+     font-size: 18px;
+     width: 129px;
+}
+@media (min-width:1920px) {
+    .program-network .fx-program-network .box-program-network h4{font-size: 1.3rem; margin-bottom: 1rem;}
+    .program-network .fx-program-network .box-program-network p {font-size: 18px;line-height: 35px;}
+    .program-network .fx-program-network .box-program-network{padding: 30px 48px;}
+    .details-B2G p {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .box-WhatYouGet h4{font-size: 20px;}
+    .box-WhatYouGet h2{font-size: 24px;}
+    .WhatYouGet .box-WhatYouGet{gap: 32px;}
+    .box-WhatYouGet .fx-box-WhatYouGet{gap: 24px;}
+    .program-network h2{
+        font-size: 30px;
+        margin-bottom: 42px;
+    }
+    .section-eight2 p{font-size: 1.2rem;}
+}
+@media (max-width:1228.8px) {
+    .details-B2G p{font-size: 18px;}
+    .details-B2G h2 {
+        padding-bottom: 16px;
+        margin-bottom: 24px;
+    }
+    .box-WhatYouGet h4{font-size: 15px;}
+    .box-WhatYouGet h2{font-size: 18px;}
+    .WhatYouGet .box-WhatYouGet{gap: 20px;}
+    .section-eight2 .section-eight-container{width: 45%;}
+}
+@media (max-width:1024px) {
+    .details-B2G p{font-size: 16px;line-height: 26px;}
+    .box-WhatYouGet h2{font-size: 16px;}
+    .box-WhatYouGet .fx-box-WhatYouGet{gap: 8px;}
+    .box-WhatYouGet h4{font-size: 12px;}
+    .program-network .fx-program-network .box-program-network p {
+        font-size: 10.67px;
+        line-height: 18px;
+    }
+    .program-network .fx-program-network .box-program-network{padding: 8px;}
+    .program-network .fx-program-network .box-program-network img{width: 80px;height: 80px;}
+    .WhatYouGet .fx-WhatYouGet{gap: 24px;}
+    .WhatYouGet .box-WhatYouGet{
+        flex: 1 1 calc(48% - 24px);
+        max-width: calc(48% - 0px);
+    }
+}
+@media (max-width:877.71px) {
+    .section-eight2 .fx-submit .btn-move {
+        height: 45px;
+        font-size: 14px;
+    }
+}
+@media (max-width:786px) {
+    .sub-main{margin: 32px auto;}
+    .section-eight2 .section-eight-container{width: 60%;}
+}
+@media (max-width:614.4px) {
+     .sub-main {
+        margin: 16px auto;
+        padding:24px 16px;
+    }
+    .WhatYouGet .box-WhatYouGet {
+        flex: 1 1 calc(100% - 24px);
+        max-width: calc(100% - 0px);
+        padding:24px 16px;
+    }
+    .sub-main .border-line{margin: 24px auto;}
+    .program-network h2{font-size: 20px;}
+     .program-network .fx-program-network{gap: 16px;}
+    .program-network .fx-program-network .box-program-network{
+        flex: 1 1 calc(50% - 16px);
+        max-width: calc(50% - 0px);
+    }
+    .program-network .fx-program-network .box-program-network h4{font-size: 15px;line-height: 22px;margin-bottom: 4px;}
+    .program-network .fx-program-network .box-program-network p br{display: none;}
+    .section-eight2{margin-top: 70px;}
+    .section-eight2 .section-eight-container{width: 90%;}
+    .section-eight2 .btn-move{padding: 0 24px;width: max-content;}
+}
+/* Section Contact */
+.section-contact .fx-section-contact{
+    gap: 70px;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+.section-contact .fx-section-contact .section-contact-texts{
+    flex: 1 1 calc(45% - 70px);
+    max-width: calc(45% - 0px);
+}
+.section-contact .fx-section-contact .section-contact-img{
+    flex: 1 1 calc(55% - 70px);
+    max-width: calc(55% - 0px);
+}
+.section-contact .section-contact-texts h1{
+    margin-bottom: 48px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.section-contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.section-contact form button{
+    width: 248px;
+    height: 60px;
+    font-size: 18px;
+}
+.section-contact form input{text-transform: capitalize;}
+.section-contact form input[type="email"]{text-transform: lowercase;}
+
+.section-contact .fx-section-contact .section-contact-img img{width: 100%;}
+.section-contact .fx-section-contact .section-contact-img p{
+    font-size: 16px;
+    opacity: 70%;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    width: 90%;
+    border-top: 1px solid rgba(100, 12, 136, 0.2);
+    margin: 30px auto;
+    padding-top: 30px;
+    text-align: center;
+}
+.section-contact .fx-section-contact .section-contact-img p span{color: rgba(100, 12, 136, 1);}
+@media (min-width:1920px) {
+    .section-contact .fx-section-contact .section-contact-img p{font-size: 1.2rem;}
+}
+@media (max-width:1228.8px) {
+    .section-contact .fx-section-contact .section-contact-texts{
+        flex: 1 1 calc(50% - 70px);
+        max-width: calc(50% - 0px);
+    }
+    .section-contact .fx-section-contact .section-contact-img{
+        flex: 1 1 calc(50% - 70px);
+        max-width: calc(50% - 0px);
+    }
+}
+@media (max-width:877.71px) {
+    .section-contact .fx-section-contact .section-contact-texts{
+        flex: 1 1 calc(100% - 70px);
+        max-width: calc(100% - 0px);
+    }
+    .section-contact .fx-section-contact .section-contact-img{
+        flex: 1 1 calc(100% - 70px);
+        max-width: calc(100% - 0px);
+    }
+    .section-contact form button{
+        width: 150px;
+        height: 45px;
+        font-size: 15px;
+    }
+}

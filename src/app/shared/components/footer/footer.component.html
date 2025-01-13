@@ -9,24 +9,28 @@
             </div>
             <div class="part part2">
                 <a [routerLink]="'index'" class="font-medium">Home</a>
-                <a class="font-medium">About us</a>
-                <a [routerLink]="'programPage'" class="font-medium">Our Programs</a>
-                <a [routerLink]="'./freeConsultation'" class="font-medium">Contact Us</a>
-                <a class="font-medium">Get a Demo</a>
+                <a class="font-medium" [routerLink]="['/']" fragment="aboutSection" [ngClass]="{ 'active': isActive }"
+                    (click)="setActiveSection('aboutSection')">About us</a>
+                <a [routerLink]="['./programPage']" fragment="main" [ngClass]="{ 'active': isActive }"
+                    (click)="setActiveSection('main')" class="font-medium">Our Programs</a>
+                <a [routerLink]="['./freeConsultation']" fragment="main2" [ngClass]="{ 'active': isActive }"
+                    (click)="setActiveSection('main2')" class="font-medium">Contact Us</a>
+                <a class="font-medium" [routerLink]="['/']" fragment="Contact" [ngClass]="{ 'active': isActive }"
+                    (click)="setActiveSection('Contact')">Get a Demo</a>
             </div>
             <div class="part part3">
                 <h1 class="font-bold">Let’s Chat!</h1>
                 <p class="style-font">Please provide your email address by submitting it, and we will make sure to
                     contact you as soon
                     as possible.</p>
-                <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+                <!-- <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
                     <div class="d-flex fx-submit">
                         <input type="email" id="email" name="email" placeholder="Enter your email"
                             [(ngModel)]="formData.email" required email>
                         <button type="submit" class="btn-move font-medium"
                             [disabled]="contactForm.invalid">Submit</button>
                     </div>
-                </form>
+                </form> -->
                 <div class="d-flex align-items-center fx-icons-link">
                     <a><img src="../../../../assets/images/icon-whatsapp.svg" alt="icon-whatsapp"></a>
                     <a><img src="../../../../assets/images/icon-email.svg" alt="icon-email"></a>

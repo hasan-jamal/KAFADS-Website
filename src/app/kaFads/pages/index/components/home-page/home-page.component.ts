@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { FormHomePageComponent } from '../../../../components/form-home-page/form-home-page.component';
 import { Header1Component } from '../../../../../shared/components/header1/header1.component';
+
 declare var $: any;
 
 @Component({

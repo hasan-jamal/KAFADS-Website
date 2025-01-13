@@ -144,8 +144,8 @@ nav, .hamburger, .coverNav {
 .navbar-mobile-pages .hamburger div{background: #000;}
 @media (max-width:768px) {
   .navbar-mobile .flex-head{  padding: 2rem 40px 2rem 40px;}
-  .subNavbar-mobile .flex-head{  padding: 1rem 40px 1rem 40px;}
-  .subNavbar-mobile .flex-head img{width: 100px;}
+  .subNavbar-mobile .flex-head{  padding: 1rem 20px 1rem 20px !important; }
+  .subNavbar-mobile .flex-head img{width: 150px;}
   .subNavbar-mobile .hamburger div{background: rgba(100, 12, 136, 1);}
 }
 @media (max-width:512px) {

@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 import { Header2Component } from '../../../../../shared/components/header2/header2.component';
 import Swal from 'sweetalert2';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-free-consultation',
@@ -19,7 +20,7 @@ import Swal from 'sweetalert2';
     '../../../../../../assets/css/footer.css'
 ],
 })
-export class FreeConsultationComponent {
+export class FreeConsultationComponent implements OnInit{
    formData = {
     fullName: '',
     email: '',
@@ -29,7 +30,9 @@ export class FreeConsultationComponent {
   };
 
   loading = false;
-
+ ngOnInit(): void {
+       AOS.init();
+ }
   // Submit function
   onSubmit() {
     // Check if all fields are filled

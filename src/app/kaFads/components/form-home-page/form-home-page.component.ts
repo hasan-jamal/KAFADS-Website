@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component,ViewEncapsulation  } from '@angular/core';
+import { AfterViewInit, Component,OnInit  } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import * as AOS from 'aos';
 
 declare var intlTelInput: any;
 
@@ -13,8 +14,10 @@ declare var intlTelInput: any;
   templateUrl: './form-home-page.component.html',
   styleUrl: './form-home-page.component.css'
 })
-export class FormHomePageComponent implements AfterViewInit {
-  
+export class FormHomePageComponent implements OnInit, AfterViewInit {
+   ngOnInit(): void {
+        AOS.init();
+  }
 ngAfterViewInit(): void {
     const input = document.querySelector("#phoneNumber") as HTMLInputElement | null;
 

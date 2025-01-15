@@ -3,6 +3,8 @@ import { Component, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 import { Header2Component } from '../../../../../shared/components/header2/header2.component';
+import * as AOS from 'aos';
+
 @Component({
   selector: 'app-program-page',
   imports: [CommonModule,FormsModule,Header2Component],
@@ -16,7 +18,10 @@ import { Header2Component } from '../../../../../shared/components/header2/heade
               '../../../../../../assets/css/footer.css'
          ],
 })
-export class ProgramPageComponent  {
+export class ProgramPageComponent  implements OnInit{
+  ngOnInit(): void {
+          AOS.init();
+  }
   formData = {
     email: '',
   };

@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { FormHomePageComponent } from '../../../../components/form-home-page/form-home-page.component';
 import { Header1Component } from '../../../../../shared/components/header1/header1.component';
-
+import * as AOS from 'aos';
 declare var $: any;
 
 @Component({
@@ -34,6 +34,7 @@ export class HomePageComponent implements OnInit, AfterViewInit{
         }
       }
     });
+      AOS.init();
   }
   private initSliders(): void {
     // Initialize Slider 1

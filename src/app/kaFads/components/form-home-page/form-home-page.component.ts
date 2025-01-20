@@ -15,9 +15,11 @@ declare var intlTelInput: any;
   styleUrl: './form-home-page.component.css'
 })
 export class FormHomePageComponent implements OnInit, AfterViewInit {
-   ngOnInit(): void {
-        AOS.init();
-  }
+
+  
+  ngOnInit(): void {
+      AOS.init();
+}
 ngAfterViewInit(): void {
     const input = document.querySelector("#phoneNumber") as HTMLInputElement | null;
 
@@ -76,9 +78,9 @@ onSubmit() {
   }
 
   this.loading = true; 
-  const serviceID = 'service_865eqql'; 
-  const templateID = 'template_ywldkio'; 
-  const userID = 'AjD7kjzCo8enF0G4s'; 
+  const serviceID = 'service_5qn4hid'; 
+  const templateID = 'template_k64ug8o'; 
+  const userID = 'Cy4_if_gNEt__Z3_i'; 
   const storedDialCode = localStorage.getItem('dialCode');
   this.formData.phoneNumber = `+${storedDialCode} ${this.formData.phoneNumber}`; 
   console.log(this.formData.phoneNumber);

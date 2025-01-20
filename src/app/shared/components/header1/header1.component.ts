@@ -19,10 +19,12 @@ export class Header1Component {
 isSidenavActive = false;
 interval: any;
  scrollToSection(): void {
+  if (typeof document !== 'undefined') {
     const section = document.getElementById('aboutSection');
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
+  }
   }
    scrollToSectionContact(): void {
     const section = document.getElementById('Contact');

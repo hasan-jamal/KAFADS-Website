@@ -24,6 +24,7 @@
     "@emailjs/browser": "^4.4.1",
     "aos": "^2.3.4",
     "express": "^4.18.2",
+    "intl-tel-input": "^25.2.1",
     "jquery": "^3.7.1",
     "rxjs": "~7.8.0",
     "slick-carousel": "^1.8.1",

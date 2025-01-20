@@ -53,9 +53,9 @@ export class FreeConsultationComponent implements OnInit{
     }
 
     this.loading = true;  // Disable the button
-    const serviceID = 'service_865eqql'; // Replace with your EmailJS Service ID
-    const templateID = 'template_4o27zwa'; // Replace with your EmailJS Template ID
-    const userID = 'AjD7kjzCo8enF0G4s'; // Replace with your EmailJS User ID
+    const serviceID = 'service_5qn4hid'; // Replace with your EmailJS Service ID
+    const templateID = 'template_46937u3'; // Replace with your EmailJS Template ID
+    const userID = 'Cy4_if_gNEt__Z3_i'; // Replace with your EmailJS User ID
 
     emailjs
       .send(

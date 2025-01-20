@@ -14,22 +14,6 @@
 
 <body>
   <app-root></app-root>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-  <script>
-    // Initialize intl-tel-input on your input field
-    var input = document.querySelector("#phoneNumber");
-    var iti = window.intlTelInput(input, {
-      initialCountry: "auto",  // Automatically detect the user's country
-      preferredCountries: ['us', 'gb', 'in', 'au'],  // Optional, can specify preferred countries
-      separateDialCode: true,  // Optional, display the country code separately
-    });
-
-    // To get the selected country code
-    input.addEventListener("input", function () {
-      console.log(iti.getSelectedCountryData().dialCode); // Prints the selected country dial code
-    });
-  </script>
 </body>
 
 </html>
